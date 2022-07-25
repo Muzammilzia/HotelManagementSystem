@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "About";
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+<h2>@ViewBag.Title.</h2>
+<h3>Best 5-star Hotel</h3>
+
+<p>Are You staying in the city? We have room for you!</p>

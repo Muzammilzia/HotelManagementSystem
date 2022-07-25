@@ -1,0 +1,38 @@
+﻿@model HotelManagementSystem.Models.Accomodation
+
+@{
+    ViewBag.Title = "Details";
+    if (Session["userID"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Accomodation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Accomodation1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accomodation1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Room.id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Room.id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

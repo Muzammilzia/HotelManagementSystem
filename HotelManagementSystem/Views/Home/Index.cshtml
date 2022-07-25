@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Hotel Inn</h1>
+    <p class="lead">Staying in the city? We have room for you!</p>
+    <p class="btn btn-link btn-lg">@Html.ActionLink("Find Rooms","Index" , "Rooms")</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Room Categories</h2>
+        <p>
+            Check all the categories of rooms that we have
+        </p>
+        <p class="btn btn-default">@Html.ActionLink("Categories", "Index", "Categories")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Room types</h2>
+        <p>Check all the categories of rooms that we have</p>
+        <p class="btn btn-default">@Html.ActionLink("RoomType", "Index", "RoomTypes")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Acommodation</h2>
+        <p>Are you by yourself or with a loved one? see our for how many people we provide rooms</p>
+        <p class="btn btn-default">@Html.ActionLink("Accomodations", "Index", "Accomodations") </p>
+    </div>
+</div>
